@@ -31,7 +31,7 @@ module "eks" {
   access_entries = {
     # One access entry with a policy associated
     example = {
-      principal_arn = "arn:aws:iam::876997124628:user/terraform"
+      principal_arn = "arn:aws:iam::636553479286:user/tf-master"
 
       policy_associations = {
         example = {
@@ -95,7 +95,7 @@ module "eks" {
       instance_types = ["t3.large"]
       capacity_type  = "SPOT"
 
-      disk_size                  = 35
+      disk_size                  = 20
       use_custom_launch_template = false # Important to apply disk size!
 
       remote_access = {
